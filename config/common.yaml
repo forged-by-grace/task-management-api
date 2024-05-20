@@ -1,0 +1,12 @@
+app:
+  title: "Task Management API"
+  description: ""
+  lifespan: 'on'
+  version: "1.0.0"
+  entry_point: 'main:app'
+  developer_name: 'James Nornubari Confidence'
+  developer_repo_url: 'https://github.com/forged-by-grace/'
+  developer_email: 'nornubariconfidence@gmail.com'
+ 
+
+

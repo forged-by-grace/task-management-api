@@ -1,0 +1,19 @@
+app:
+  host: "localhost"
+  port: 8020
+  debug: True
+  reload: True
+  db_url: 'sqlite:///./app/db/development.db'
+  refresh_token_secret: 'ead16e8a1929edb6fc6af636aae56ee2cf83a346c1175b5822ac6771e9c4037a'
+  access_token_secret: 'bb99e89b17e5d024fef916f9021076e1ce0a0330068c6759459ea79f067a62a3'
+  access_token_expiry_seconds: 3600
+  refresh_token_expiry_seconds: 86400
+  token_algorithm: "HS256"
+  token_bytes: 32
+  token_aud: 'authenticated'
+  token_iss: 'https://github.com/forged-by-grace'
+  token_sub: 'token'
+  token_type: 'Bearer'
+  tls_cert_path: "./tls/cert.pem"
+  tls_key_path: "./tls/key.pem"
+

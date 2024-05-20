@@ -1,0 +1,7 @@
+app:
+  host: "0.0.0.0"
+  port: 8030
+  debug: False
+  reload: False
+  db_url: 'sqlite:///./app/db/production.db'
+
