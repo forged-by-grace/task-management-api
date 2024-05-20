@@ -53,35 +53,35 @@ The authentication endpoints allow users to register, login, update their profil
 
 ### API Version: v1
 
-#### Register User Account
+#### Register New Account
 
 - **HTTP Method**: POST
 - **Endpoint**: `/api/v1/accounts/register`
-- **Description**: Register a new user with email and password.
+- **Description**: Register a new user account with email and password.
 - **Request Body**:
   ```json
   {
-  "last_name": "James",
-  "first_name": "Confidence",
-  "username": "jc",
-  "email": "joe@example.com",
-  "avatar": "https://example.com/image.jpg",
-  "password": "12345678"
+  "last_name": "string",
+  "first_name": "string",
+  "username": "string",
+  "email": "string",
+  "avatar": "string",
+  "password": "string"
   }
   ```
 - **Response**: 
    ```json
   {
-  "last_name": "James",
-  "first_name": "Confidence",
-  "username": "jc",
-  "email": "joe@example.com",
-  "avatar": "https://example.com/image.jpg",
-  "id": 1,
-  "is_active": false,
-  "created_at": "2024-05-17T12:13:15",
-  "updated_at": "2024-05-17T12:13:15",
-  "role": "User"
+  "last_name": "string",
+  "first_name": "string",
+  "username": "string",
+  "email": "string",
+  "avatar": "string",
+  "id": "int",
+  "is_active": "boolean",
+  "created_at": "datetime",
+  "updated_at": "datetime",
+  "role": "string"
   }
   ```
 - **Status Codes**:
@@ -108,15 +108,15 @@ The authentication endpoints allow users to register, login, update their profil
     "refresh_token": "string",
     "access_token": "string",
     "token_type": "string",
-    "token_expiry_seconds": 3600,
+    "token_expiry_seconds": "int",
     "data": {
-      "first_name": "Confidence",
-      "last_name": "James",
-      "id": 0,
-      "username": "jc",
-      "email": "joe@example.com",
-      "role": "Admin",
-      "avatar": "https://example.com/image.jpg"
+      "first_name": "string",
+      "last_name": "string",
+      "id": "int",
+      "username": "string",
+      "email": "string",
+      "role": "string",
+      "avatar": "string"
     }
   }
   ```
@@ -144,15 +144,15 @@ The authentication endpoints allow users to register, login, update their profil
     "refresh_token": "string",
     "access_token": "string",
     "token_type": "string",
-    "token_expiry_seconds": 3600,
+    "token_expiry_seconds": "int",
     "data": {
-      "first_name": "Confidence",
-      "last_name": "James",
-      "id": 0,
-      "username": "jc",
-      "email": "joe@example.com",
-      "role": "Admin",
-      "avatar": "https://example.com/image.jpg"
+      "first_name": "string",
+      "last_name": "string",
+      "id": "int",
+      "username": "string",
+      "email": "string",
+      "role": "string",
+      "avatar": "string"
     }
   }
   ```
