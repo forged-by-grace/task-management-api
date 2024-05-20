@@ -206,7 +206,7 @@ The authentication endpoints allow users to register, login, update their profil
 
 #### Logout Account
 
-- **HTTP Method**: DELETE
+- **HTTP Method**: GET
 - **Endpoint**: `/api/v1/account/me`
 - **Description**: Delete user account.
 - **Request Header**:
@@ -386,7 +386,7 @@ The application logs events and errors to the `log/audit.log` file.
 
 The application can be Dockerized using the provided `Dockerfile`. Build the Docker image using the following command:
 ```
-docker build -t your_docker_image .
+docker build -t task-management-api-image .
 ```
 
 ## Continuous Integration (CI) <a name="continuous-integration-ci"></a>
